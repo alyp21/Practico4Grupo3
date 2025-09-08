@@ -5,12 +5,22 @@ public class Colegio {
 
     public static void main(String[] args) {
        
-        Materia materia1 = new Materia(123, "Web2",2);
-        Materia materia2 = new Materia(456,"Matematicas",1);
-        Materia materia3 = new Materia(789, "Laboratorio1",1);
+        Materia web2 = new Materia(123, "Web2",2);
+        Materia matematicas = new Materia(456,"Matematicas",1);
+        Materia lab1 = new Materia(789, "Laboratorio1",1);
         
-        Alumno alumno1 = new Alumno(1001,"Martin","Lopez");
-        Alumno alumno2 = new Alumno(1002,"Brenda","Martinez");
+        Alumno lopez = new Alumno(1001,"Martin","Lopez");
+        Alumno martinez = new Alumno(1002,"Brenda","Martinez");
+        
+        lopez.agregarMateria(web2);
+        lopez.agregarMateria(matematicas);
+        lopez.agregarMateria(lab1);
+        martinez.agregarMateria(web2);
+        martinez.agregarMateria(lab1);
+        martinez.agregarMateria(matematicas);
+        martinez.agregarMateria(lab1);
+        System.out.println("Cantidad de materias inscriptas de Lopez: " + lopez.cantidadMaterias());
+        System.out.println("Cantidad de materias inscriptas de Martinez: " + martinez.cantidadMaterias());
     }
     
 }
