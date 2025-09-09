@@ -134,14 +134,31 @@ public class Menu extends javax.swing.JFrame {
 
     private void jMateria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMateria1ActionPerformed
         // TODO add your handling code here:
+         AgregarMateria materia = new AgregarMateria(); 
+    Escritorio.add(materia);
+    materia.setVisible(true);
+    try { 
+        materia.setSelected(true); 
+    } catch (java.beans.PropertyVetoException ex) { 
+        ex.printStackTrace(); 
+    }
     }//GEN-LAST:event_jMateria1ActionPerformed
 
     private void JSalir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSalir1ActionPerformed
         // TODO add your handling code here:
+         System.exit(0);   
     }//GEN-LAST:event_JSalir1ActionPerformed
 
     private void jRegistro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRegistro1ActionPerformed
         // TODO add your handling code here:
+         AgregarRegistro registro = new AgregarRegistro(); 
+    Escritorio.add(registro);
+    registro.setVisible(true);
+    try { 
+        registro.setSelected(true); 
+    } catch (java.beans.PropertyVetoException ex) { 
+        ex.printStackTrace(); 
+    }
     }//GEN-LAST:event_jRegistro1ActionPerformed
 
     /**
