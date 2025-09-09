@@ -27,34 +27,34 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jtfApellido = new javax.swing.JTextField();
+        jtfLegajo = new javax.swing.JTextField();
+        jtfNombre = new javax.swing.JTextField();
+        jbGuardar = new javax.swing.JButton();
+        jbNuevo = new javax.swing.JButton();
+        jbSalir = new javax.swing.JButton();
+        jlNombre = new javax.swing.JLabel();
+        jlApellido = new javax.swing.JLabel();
+        jlLegajo = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        jButton1.setForeground(new java.awt.Color(0, 153, 204));
-        jButton1.setText("Guardar ");
+        jbGuardar.setForeground(new java.awt.Color(0, 153, 204));
+        jbGuardar.setText("Guardar ");
 
-        jButton2.setForeground(new java.awt.Color(0, 153, 204));
-        jButton2.setText("Nuevo");
+        jbNuevo.setForeground(new java.awt.Color(0, 153, 204));
+        jbNuevo.setText("Nuevo");
 
-        jButton3.setForeground(new java.awt.Color(0, 153, 204));
-        jButton3.setText("Salir");
+        jbSalir.setForeground(new java.awt.Color(0, 153, 204));
+        jbSalir.setText("Salir");
 
-        jLabel1.setForeground(new java.awt.Color(0, 153, 204));
-        jLabel1.setText("NOMBRE");
+        jlNombre.setForeground(new java.awt.Color(0, 153, 204));
+        jlNombre.setText("NOMBRE");
 
-        jLabel2.setForeground(new java.awt.Color(0, 153, 204));
-        jLabel2.setText("APELLIDO");
+        jlApellido.setForeground(new java.awt.Color(0, 153, 204));
+        jlApellido.setText("APELLIDO");
 
-        jLabel3.setForeground(new java.awt.Color(0, 153, 204));
-        jLabel3.setText("LEGAJO");
+        jlLegajo.setForeground(new java.awt.Color(0, 153, 204));
+        jlLegajo.setText("LEGAJO");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 204));
@@ -67,14 +67,14 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(jlLegajo)
+                    .addComponent(jlNombre)
+                    .addComponent(jlApellido))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtfApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
+                    .addComponent(jtfNombre)
+                    .addComponent(jtfLegajo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -83,11 +83,11 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
                         .addComponent(jLabel4))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(164, 164, 164)
-                        .addComponent(jButton3)
+                        .addComponent(jbSalir)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)
+                        .addComponent(jbNuevo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1)))
+                        .addComponent(jbGuardar)))
                 .addGap(36, 36, 36))
         );
         jPanel1Layout.setVerticalGroup(
@@ -97,21 +97,21 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
                 .addComponent(jLabel4)
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlLegajo)
+                    .addComponent(jtfLegajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlApellido)
+                    .addComponent(jtfApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlNombre)
+                    .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(jbSalir)
+                    .addComponent(jbNuevo)
+                    .addComponent(jbGuardar))
                 .addGap(24, 24, 24))
         );
 
@@ -131,16 +131,16 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton jbGuardar;
+    private javax.swing.JButton jbNuevo;
+    private javax.swing.JButton jbSalir;
+    private javax.swing.JLabel jlApellido;
+    private javax.swing.JLabel jlLegajo;
+    private javax.swing.JLabel jlNombre;
+    private javax.swing.JTextField jtfApellido;
+    private javax.swing.JTextField jtfLegajo;
+    private javax.swing.JTextField jtfNombre;
     // End of variables declaration//GEN-END:variables
 }
