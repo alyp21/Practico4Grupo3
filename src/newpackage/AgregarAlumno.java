@@ -12,11 +12,13 @@ import javax.swing.JOptionPane;
  * @author Emiliano
  */
 public class AgregarAlumno extends javax.swing.JInternalFrame {
-private HashSet <Alumno> alumnos;
+    private HashSet <Alumno> alumnos;
+    
     /**
      * Creates new form AgregarAlumno
+     * @param alumnos
      */
-    public AgregarAlumno(HashSet<Alumno> alumnos) {
+    public AgregarAlumno(HashSet<Alumno>alumno) {
         initComponents();
         this.alumnos = alumnos;
     }

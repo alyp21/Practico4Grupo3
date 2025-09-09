@@ -4,12 +4,17 @@
  */
 package newpackage;
 
+import java.util.HashSet;
+
 /**
  *
  * @author alybe
  */
 public class Menu extends javax.swing.JFrame {
 
+     private static HashSet<Alumno> alumno = new HashSet<>();
+     private static HashSet<Materia> materia = new HashSet<>();
+     
     /**
      * Creates new form Menu
      */
@@ -121,17 +126,18 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItemAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAlumnoActionPerformed
-       AgregarAlumno alumno = new AgregarAlumno(); 
-    Escritorio.add(alumno);
-    alumno.setVisible(true);
+         HashSet<Alumno> alumnos = null;
+        AgregarAlumno alumno = new AgregarAlumno(alumnos); 
+        Escritorio.add(alumno);
+        alumno.setVisible(true);
 
     }//GEN-LAST:event_jMenuItemAlumnoActionPerformed
 
     private void jMenuItemateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemateriaActionPerformed
-        // TODO add your handling code here:
-         AgregarMateria materia = new AgregarMateria(); 
-    Escritorio.add(materia);
-    materia.setVisible(true);
+         HashSet<Materia> materias = null;
+       AgregarMateria materia = new AgregarMateria(materias); 
+       Escritorio.add(materia);
+       materia.setVisible(true);
     }//GEN-LAST:event_jMenuItemateriaActionPerformed
 
     private void JSalir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSalir1ActionPerformed

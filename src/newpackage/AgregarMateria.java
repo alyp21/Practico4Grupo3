@@ -4,17 +4,22 @@
  */
 package newpackage;
 
+import java.util.HashSet;
+
 /**
  *
  * @author Emiliano
  */
 public class AgregarMateria extends javax.swing.JInternalFrame {
-
+    private HashSet<Materia> materias = new HashSet <>();
+    
     /**
      * Creates new form AgregarMateria
+     * @param materias
      */
-    public AgregarMateria() {
+    public AgregarMateria(HashSet<Materia> materias) {
         initComponents();
+        this.materias = materias;
     }
 
     /**

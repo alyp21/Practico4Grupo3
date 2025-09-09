@@ -18,7 +18,8 @@ public class Colegio {
         martinez.agregarMateria(web2);
         martinez.agregarMateria(lab1);
         martinez.agregarMateria(matematicas);
-        martinez.agregarMateria(lab1);
+        martinez.agregarMateria(lab1); //repetimos la inscripcion pq lo pide en la consigna !!!
+        
         System.out.println("Cantidad de materias inscriptas de Lopez: " + lopez.cantidadMaterias());
         System.out.println("Cantidad de materias inscriptas de Martinez: " + martinez.cantidadMaterias());
     }
