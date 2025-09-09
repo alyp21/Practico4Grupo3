@@ -28,10 +28,10 @@ public class Menu extends javax.swing.JFrame {
 
         Escritorio = new javax.swing.JDesktopPane();
         jMenuBar = new javax.swing.JMenuBar();
-        jAlumno = new javax.swing.JMenu();
-        jAlumno1 = new javax.swing.JMenuItem();
+        jMenuAlumno = new javax.swing.JMenu();
+        jMenuItemAlumno = new javax.swing.JMenuItem();
         jMateria = new javax.swing.JMenu();
-        jMateria1 = new javax.swing.JMenuItem();
+        jMenuItemateria = new javax.swing.JMenuItem();
         jRegistro = new javax.swing.JMenu();
         jRegistro1 = new javax.swing.JMenuItem();
         jSalir = new javax.swing.JMenu();
@@ -50,27 +50,27 @@ public class Menu extends javax.swing.JFrame {
             .addGap(0, 387, Short.MAX_VALUE)
         );
 
-        jAlumno.setText("Alumno");
+        jMenuAlumno.setText("Alumno");
 
-        jAlumno1.setText("Agregar Alumno");
-        jAlumno1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemAlumno.setText("Agregar Alumno");
+        jMenuItemAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jAlumno1ActionPerformed(evt);
+                jMenuItemAlumnoActionPerformed(evt);
             }
         });
-        jAlumno.add(jAlumno1);
+        jMenuAlumno.add(jMenuItemAlumno);
 
-        jMenuBar.add(jAlumno);
+        jMenuBar.add(jMenuAlumno);
 
         jMateria.setText("Materia");
 
-        jMateria1.setText("Agregar Materia");
-        jMateria1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemateria.setText("Agregar Materia");
+        jMenuItemateria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMateria1ActionPerformed(evt);
+                jMenuItemateriaActionPerformed(evt);
             }
         });
-        jMateria.add(jMateria1);
+        jMateria.add(jMenuItemateria);
 
         jMenuBar.add(jMateria);
 
@@ -120,19 +120,19 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jAlumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAlumno1ActionPerformed
-       AgregarAlumno alumnos = new AgregarAlumno(); 
-    Escritorio.add(alumnos);
-    alumnos.setVisible(true);
+    private void jMenuItemAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAlumnoActionPerformed
+       AgregarAlumno alumno = new AgregarAlumno(); 
+    Escritorio.add(alumno);
+    alumno.setVisible(true);
 
-    }//GEN-LAST:event_jAlumno1ActionPerformed
+    }//GEN-LAST:event_jMenuItemAlumnoActionPerformed
 
-    private void jMateria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMateria1ActionPerformed
+    private void jMenuItemateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemateriaActionPerformed
         // TODO add your handling code here:
          AgregarMateria materia = new AgregarMateria(); 
     Escritorio.add(materia);
     materia.setVisible(true);
-    }//GEN-LAST:event_jMateria1ActionPerformed
+    }//GEN-LAST:event_jMenuItemateriaActionPerformed
 
     private void JSalir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSalir1ActionPerformed
         // TODO add your handling code here:
@@ -185,11 +185,11 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane Escritorio;
     private javax.swing.JMenuItem JSalir1;
-    private javax.swing.JMenu jAlumno;
-    private javax.swing.JMenuItem jAlumno1;
     private javax.swing.JMenu jMateria;
-    private javax.swing.JMenuItem jMateria1;
+    private javax.swing.JMenu jMenuAlumno;
     private javax.swing.JMenuBar jMenuBar;
+    private javax.swing.JMenuItem jMenuItemAlumno;
+    private javax.swing.JMenuItem jMenuItemateria;
     private javax.swing.JMenu jRegistro;
     private javax.swing.JMenuItem jRegistro1;
     private javax.swing.JMenu jSalir;

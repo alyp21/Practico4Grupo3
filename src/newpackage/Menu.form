@@ -4,17 +4,17 @@
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jAlumno">
+        <Menu class="javax.swing.JMenu" name="jMenuAlumno">
           <Properties>
             <Property name="text" type="java.lang.String" value="Alumno"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jAlumno1">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAlumno">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Agregar Alumno"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jAlumno1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemAlumnoActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -24,12 +24,12 @@
             <Property name="text" type="java.lang.String" value="Materia"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMateria1">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemateria">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Agregar Materia"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMateria1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemateriaActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
