@@ -121,14 +121,10 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jAlumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAlumno1ActionPerformed
-        AgregarAlumno alumno = new AgregarAlumno(); 
-    Escritorio.add(alumno);
-    alumno.setVisible(true);
-    try { 
-        alumno.setSelected(true); 
-    } catch (java.beans.PropertyVetoException ex) { 
-        ex.printStackTrace(); 
-    }
+       AgregarAlumno alumnos = new AgregarAlumno(); 
+    Escritorio.add(alumnos);
+    alumnos.setVisible(true);
+
     }//GEN-LAST:event_jAlumno1ActionPerformed
 
     private void jMateria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMateria1ActionPerformed
@@ -148,11 +144,7 @@ public class Menu extends javax.swing.JFrame {
          AgregarRegistro registro = new AgregarRegistro(); 
     Escritorio.add(registro);
     registro.setVisible(true);
-    try { 
-        registro.setSelected(true); 
-    } catch (java.beans.PropertyVetoException ex) { 
-        ex.printStackTrace(); 
-    }
+ 
     }//GEN-LAST:event_jRegistro1ActionPerformed
 
     /**

@@ -4,17 +4,21 @@
  */
 package newpackage;
 
+import java.util.HashSet;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Emiliano
  */
 public class AgregarAlumno extends javax.swing.JInternalFrame {
-
+private HashSet <Alumno< alumnos;
     /**
      * Creates new form AgregarAlumno
      */
-    public AgregarAlumno() {
+    public AgregarAlumno(HashSet<Alumno> alumnos) {
         initComponents();
+        this.alumnos = alumnos;
     }
 
     /**
@@ -150,6 +154,17 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
 
     private void jbGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGuardarActionPerformed
         // TODO add your handling code here:
+        int legajo = Integer.parseInt(jtfLegajo.getText());
+        String nombre = jtfNombre.getText();
+        String apellido = jtfApellido.getText();
+
+        Alumno a = new Alumno(legajo, nombre, apellido);
+
+        if (alumno.add(a)) {
+            JOptionPane.showMessageDialog(this, "Alumno agregado correctamente");
+        } else {
+            JOptionPane.showMessageDialog(this, "El alumno ya existe");
+        }
         
     }//GEN-LAST:event_jbGuardarActionPerformed
 
