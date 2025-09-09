@@ -27,15 +27,15 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         Escritorio = new javax.swing.JDesktopPane();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuBar = new javax.swing.JMenuBar();
+        jAlumno = new javax.swing.JMenu();
+        jAlumno1 = new javax.swing.JMenuItem();
+        jMateria = new javax.swing.JMenu();
+        jMateria1 = new javax.swing.JMenuItem();
+        jRegistro = new javax.swing.JMenu();
+        jRegistro1 = new javax.swing.JMenuItem();
+        jSalir = new javax.swing.JMenu();
+        JSalir1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,50 +50,50 @@ public class Menu extends javax.swing.JFrame {
             .addGap(0, 327, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Alumno");
+        jAlumno.setText("Alumno");
 
-        jMenuItem1.setText("Agregar Alumno");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jAlumno1.setText("Agregar Alumno");
+        jAlumno1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jAlumno1ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jAlumno.add(jAlumno1);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar.add(jAlumno);
 
-        jMenu2.setText("Materia");
+        jMateria.setText("Materia");
 
-        jMenuItem2.setText("Agregar Materia");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jMateria1.setText("Agregar Materia");
+        jMateria1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jMateria1ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem2);
+        jMateria.add(jMateria1);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar.add(jMateria);
 
-        jMenu3.setText("Registro");
+        jRegistro.setText("Registro");
 
-        jMenuItem3.setText("Agregar Registro");
-        jMenu3.add(jMenuItem3);
+        jRegistro1.setText("Agregar Registro");
+        jRegistro.add(jRegistro1);
 
-        jMenuBar1.add(jMenu3);
+        jMenuBar.add(jRegistro);
 
-        jMenu4.setText("Salir");
+        jSalir.setText("Salir");
 
-        jMenuItem4.setText("Salir");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        JSalir1.setText("Salir");
+        JSalir1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                JSalir1ActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem4);
+        jSalir.add(JSalir1);
 
-        jMenuBar1.add(jMenu4);
+        jMenuBar.add(jSalir);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,17 +115,17 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jAlumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAlumno1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jAlumno1ActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jMateria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMateria1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jMateria1ActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void JSalir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSalir1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_JSalir1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,14 +164,14 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane Escritorio;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem JSalir1;
+    private javax.swing.JMenu jAlumno;
+    private javax.swing.JMenuItem jAlumno1;
+    private javax.swing.JMenu jMateria;
+    private javax.swing.JMenuItem jMateria1;
+    private javax.swing.JMenuBar jMenuBar;
+    private javax.swing.JMenu jRegistro;
+    private javax.swing.JMenuItem jRegistro1;
+    private javax.swing.JMenu jSalir;
     // End of variables declaration//GEN-END:variables
 }
