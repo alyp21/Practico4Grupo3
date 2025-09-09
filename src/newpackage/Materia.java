@@ -38,8 +38,41 @@ public class Materia {
     public void setAnio(int anio) {
         this.anio = anio;
     }
+
+    @Override
+    public String toString() {
+        return "Materia: " + "id: " + idMateria + " nombre: " + nombre + " anio: " + anio;
+    }
+
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Materia other = (Materia) obj;
+        if (this.idMateria != other.idMateria) {
+            return false;
+        }
+        if (this.anio != other.anio) {
+            return false;
+        }
+        return Objects.equals(this.nombre, other.nombre);
+    }
+
     @Override
     public int hashCode() {
-       return Objects.hash(idMateria);
-    }   
+        int hash = 7;
+        hash = 79 * hash + this.idMateria;
+        hash = 79 * hash + Objects.hashCode(this.nombre);
+        hash = 79 * hash + this.anio;
+        return hash;
+    }
+    
 }

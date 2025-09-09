@@ -136,8 +136,7 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbsalirActionPerformed
-        // TODO add your handling code here:
-         System.exit(0);
+        dispose();
     }//GEN-LAST:event_jbsalirActionPerformed
 
 

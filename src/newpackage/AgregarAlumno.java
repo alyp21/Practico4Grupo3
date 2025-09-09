@@ -46,6 +46,11 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
 
         jbSalir.setForeground(new java.awt.Color(0, 153, 204));
         jbSalir.setText("Salir");
+        jbSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSalirActionPerformed(evt);
+            }
+        });
 
         jlNombre.setForeground(new java.awt.Color(0, 153, 204));
         jlNombre.setText("NOMBRE");
@@ -128,6 +133,10 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalirActionPerformed
+        dispose();
+    }//GEN-LAST:event_jbSalirActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -64,6 +64,11 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
 
         jbSalir.setForeground(new java.awt.Color(0, 102, 204));
         jbSalir.setText("Salir");
+        jbSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -134,6 +139,10 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_jcbMateriaActionPerformed
+
+    private void jbSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalirActionPerformed
+        dispose();
+    }//GEN-LAST:event_jbSalirActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
