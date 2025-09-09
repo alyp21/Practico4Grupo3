@@ -147,8 +147,8 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbInscribir;
     private javax.swing.JButton jbSalir;
-    private javax.swing.JComboBox<String> jcbAlumno;
-    private javax.swing.JComboBox<String> jcbMateria;
+    private javax.swing.JComboBox<Alumno> jcbAlumno;
+    private javax.swing.JComboBox<Materia> jcbMateria;
     private javax.swing.JLabel jlAlumno;
     private javax.swing.JLabel jlMateria;
     // End of variables declaration//GEN-END:variables
