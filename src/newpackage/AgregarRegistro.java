@@ -141,11 +141,8 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jcbMateriaActionPerformed
 
     private void jbSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalirActionPerformed
-<<<<<<< HEAD
+
         dispose();
-=======
-        // TODO add your handling code here:
->>>>>>> 7f0e40c451c6545be86ff7bc88c26c01d59353df
     }//GEN-LAST:event_jbSalirActionPerformed
 
 
