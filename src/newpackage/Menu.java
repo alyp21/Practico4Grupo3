@@ -77,6 +77,11 @@ public class Menu extends javax.swing.JFrame {
         jRegistro.setText("Registro");
 
         jRegistro1.setText("Agregar Registro");
+        jRegistro1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRegistro1ActionPerformed(evt);
+            }
+        });
         jRegistro.add(jRegistro1);
 
         jMenuBar.add(jRegistro);
@@ -117,6 +122,14 @@ public class Menu extends javax.swing.JFrame {
 
     private void jAlumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAlumno1ActionPerformed
         // TODO add your handling code here:
+            AgregarAlumno alumno = new AgregarAlumno(); 
+    Escritorio.add(alumno);
+    alumno.setVisible(true);
+    try { 
+        alumno.setSelected(true); 
+    } catch (java.beans.PropertyVetoException ex) { 
+        ex.printStackTrace(); 
+    }
     }//GEN-LAST:event_jAlumno1ActionPerformed
 
     private void jMateria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMateria1ActionPerformed
@@ -126,6 +139,10 @@ public class Menu extends javax.swing.JFrame {
     private void JSalir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSalir1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JSalir1ActionPerformed
+
+    private void jRegistro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRegistro1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRegistro1ActionPerformed
 
     /**
      * @param args the command line arguments

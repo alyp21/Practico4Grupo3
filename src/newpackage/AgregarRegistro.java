@@ -36,18 +36,28 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
         jButton2 = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 204));
         jLabel1.setText("Formulario de Inscripción");
 
+        jLabel2.setForeground(new java.awt.Color(0, 102, 204));
         jLabel2.setText("ELIJA UNA MATERIA");
 
+        jLabel3.setForeground(new java.awt.Color(0, 102, 204));
         jLabel3.setText("ELIJA UN ALUMNO");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
+        jButton1.setForeground(new java.awt.Color(0, 102, 204));
         jButton1.setText("Inscribir");
 
+        jButton2.setForeground(new java.awt.Color(0, 102, 204));
         jButton2.setText("Salir");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -111,6 +121,10 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
