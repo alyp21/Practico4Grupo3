@@ -2,6 +2,8 @@
 package newpackage;
 
 import java.util.HashSet;
+import java.util.Objects;
+import javax.swing.JOptionPane;
 
 public class Alumno {
     private int legajo;
@@ -38,13 +40,54 @@ public class Alumno {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
+
+    @Override
+    public String toString() {
+        return "Alumno " + nombre + " " + apellido;
+    }
+    
     public void agregarMateria(Materia m){
-             if (materias.add(m)) {
-            System.out.println(nombre + " se inscribio en " + m.getNombre());
+             if (materias.add(m)== true) {
+            JOptionPane.showMessageDialog(null, "El alumno se inscribio correctamente.");
         } else {
-            System.out.println(nombre + " ya estaba inscripto en " + m.getNombre());
+            JOptionPane.showMessageDialog(null, "El alumno ya se encuentra inscripto.");
         }
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 23 * hash + this.legajo;
+        hash = 23 * hash + Objects.hashCode(this.nombre);
+        hash = 23 * hash + Objects.hashCode(this.apellido);
+        hash = 23 * hash + Objects.hashCode(this.materias);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Alumno other = (Alumno) obj;
+        if (this.legajo != other.legajo) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        if (!Objects.equals(this.apellido, other.apellido)) {
+            return false;
+        }
+        return Objects.equals(this.materias, other.materias);
+    }
+    
     public int cantidadMaterias(){
         
         return materias.size();
