@@ -56,11 +56,8 @@ public class Alumno {
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 23 * hash + this.legajo;
-        hash = 23 * hash + Objects.hashCode(this.nombre);
-        hash = 23 * hash + Objects.hashCode(this.apellido);
-        hash = 23 * hash + Objects.hashCode(this.materias);
+        int hash = 7;
+        hash = 29 * hash + this.legajo;
         return hash;
     }
 
@@ -79,13 +76,7 @@ public class Alumno {
         if (this.legajo != other.legajo) {
             return false;
         }
-        if (!Objects.equals(this.nombre, other.nombre)) {
-            return false;
-        }
-        if (!Objects.equals(this.apellido, other.apellido)) {
-            return false;
-        }
-        return Objects.equals(this.materias, other.materias);
+        return true;
     }
     
     public int cantidadMaterias(){

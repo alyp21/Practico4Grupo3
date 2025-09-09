@@ -41,7 +41,7 @@ public class Materia {
 
     @Override
     public String toString() {
-        return "Materia: " + "id: " + idMateria + " nombre: " + nombre + " anio: " + anio;
+        return nombre;
     }
 
     
@@ -60,18 +60,13 @@ public class Materia {
         if (this.idMateria != other.idMateria) {
             return false;
         }
-        if (this.anio != other.anio) {
-            return false;
-        }
-        return Objects.equals(this.nombre, other.nombre);
+        return true;
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 79 * hash + this.idMateria;
-        hash = 79 * hash + Objects.hashCode(this.nombre);
-        hash = 79 * hash + this.anio;
+        int hash = 5;
+        hash = 89 * hash + this.idMateria;
         return hash;
     }
     
