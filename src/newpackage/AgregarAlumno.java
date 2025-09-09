@@ -30,7 +30,7 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
         jtfApellido = new javax.swing.JTextField();
         jtfLegajo = new javax.swing.JTextField();
         jtfNombre = new javax.swing.JTextField();
-        jbGuardar = new javax.swing.JButton();
+        javax.swing.JButton jbGuardar = new javax.swing.JButton();
         jbNuevo = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
         jlNombre = new javax.swing.JLabel();
@@ -40,9 +40,19 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
 
         jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
         jbGuardar.setText("Guardar ");
+        jbGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbGuardarActionPerformed(evt);
+            }
+        });
 
         jbNuevo.setForeground(new java.awt.Color(0, 0, 0));
         jbNuevo.setText("Nuevo");
+        jbNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbNuevoActionPerformed(evt);
+            }
+        });
 
         jbSalir.setForeground(new java.awt.Color(0, 0, 0));
         jbSalir.setText("Salir");
@@ -138,11 +148,19 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
         dispose();
     }//GEN-LAST:event_jbSalirActionPerformed
 
+    private void jbGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGuardarActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jbGuardarActionPerformed
+
+    private void jbNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbNuevoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbNuevoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton jbGuardar;
     private javax.swing.JButton jbNuevo;
     private javax.swing.JButton jbSalir;
     private javax.swing.JLabel jlApellido;
