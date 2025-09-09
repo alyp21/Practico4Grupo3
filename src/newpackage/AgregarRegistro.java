@@ -30,8 +30,8 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         jlMateria = new javax.swing.JLabel();
         jlAlumno = new javax.swing.JLabel();
-        jcbMateria = new javax.swing.JComboBox<>();
-        jcbAlumno = new javax.swing.JComboBox<>();
+        javax.swing.JComboBox<Materia> jcbMateria = new javax.swing.JComboBox<>();
+        javax.swing.JComboBox<Alumno> jcbAlumno = new javax.swing.JComboBox<>();
         jbInscribir = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
 
@@ -59,6 +59,11 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
 
         jbInscribir.setForeground(new java.awt.Color(0, 0, 0));
         jbInscribir.setText("Inscribir");
+        jbInscribir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbInscribirActionPerformed(evt);
+            }
+        });
 
         jbSalir.setForeground(new java.awt.Color(0, 0, 0));
         jbSalir.setText("Salir");
@@ -141,14 +146,17 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
         dispose();
     }//GEN-LAST:event_jbSalirActionPerformed
 
+    private void jbInscribirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbInscribirActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jbInscribirActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbInscribir;
     private javax.swing.JButton jbSalir;
-    private javax.swing.JComboBox<Alumno> jcbAlumno;
-    private javax.swing.JComboBox<Materia> jcbMateria;
     private javax.swing.JLabel jlAlumno;
     private javax.swing.JLabel jlMateria;
     // End of variables declaration//GEN-END:variables
