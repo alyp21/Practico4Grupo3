@@ -51,13 +51,13 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
         jlFormulario.setForeground(new java.awt.Color(0, 153, 204));
         jlFormulario.setText("Formulario de Materias");
 
-        jbGuardar.setForeground(new java.awt.Color(0, 153, 204));
+        jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
         jbGuardar.setText("Guardar ");
 
-        jbNuevo.setForeground(new java.awt.Color(0, 153, 204));
+        jbNuevo.setForeground(new java.awt.Color(0, 0, 0));
         jbNuevo.setText("Nuevo");
 
-        jbsalir.setForeground(new java.awt.Color(0, 153, 204));
+        jbsalir.setForeground(new java.awt.Color(0, 0, 0));
         jbsalir.setText("Salir");
         jbsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -38,13 +38,13 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
         jlLegajo = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        jbGuardar.setForeground(new java.awt.Color(0, 153, 204));
+        jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
         jbGuardar.setText("Guardar ");
 
-        jbNuevo.setForeground(new java.awt.Color(0, 153, 204));
+        jbNuevo.setForeground(new java.awt.Color(0, 0, 0));
         jbNuevo.setText("Nuevo");
 
-        jbSalir.setForeground(new java.awt.Color(0, 153, 204));
+        jbSalir.setForeground(new java.awt.Color(0, 0, 0));
         jbSalir.setText("Salir");
         jbSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +80,7 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
                     .addComponent(jtfApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
                     .addComponent(jtfNombre)
                     .addComponent(jtfLegajo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 196, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -112,7 +112,7 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlNombre)
                     .addComponent(jtfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbSalir)
                     .addComponent(jbNuevo)

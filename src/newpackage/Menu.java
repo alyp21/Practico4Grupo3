@@ -43,11 +43,11 @@ public class Menu extends javax.swing.JFrame {
         Escritorio.setLayout(EscritorioLayout);
         EscritorioLayout.setHorizontalGroup(
             EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 530, Short.MAX_VALUE)
+            .addGap(0, 593, Short.MAX_VALUE)
         );
         EscritorioLayout.setVerticalGroup(
             EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 327, Short.MAX_VALUE)
+            .addGap(0, 387, Short.MAX_VALUE)
         );
 
         jAlumno.setText("Alumno");
@@ -121,8 +121,7 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jAlumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAlumno1ActionPerformed
-        // TODO add your handling code here:
-            AgregarAlumno alumno = new AgregarAlumno(); 
+        AgregarAlumno alumno = new AgregarAlumno(); 
     Escritorio.add(alumno);
     alumno.setVisible(true);
     try { 
@@ -137,11 +136,6 @@ public class Menu extends javax.swing.JFrame {
          AgregarMateria materia = new AgregarMateria(); 
     Escritorio.add(materia);
     materia.setVisible(true);
-    try { 
-        materia.setSelected(true); 
-    } catch (java.beans.PropertyVetoException ex) { 
-        ex.printStackTrace(); 
-    }
     }//GEN-LAST:event_jMateria1ActionPerformed
 
     private void JSalir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSalir1ActionPerformed
