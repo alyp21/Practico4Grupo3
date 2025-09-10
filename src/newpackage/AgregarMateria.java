@@ -63,6 +63,11 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
         });
 
         jbNuevo.setText("Nuevo");
+        jbNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbNuevoActionPerformed(evt);
+            }
+        });
 
         jbsalir.setText("Salir");
         jbsalir.addActionListener(new java.awt.event.ActionListener() {
@@ -164,6 +169,12 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
         }
         
     }//GEN-LAST:event_jbGuardarActionPerformed
+
+    private void jbNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbNuevoActionPerformed
+        jtfAño.setText("");
+        jtfCodigo.setText("");
+        jtfNombre.setText("");
+    }//GEN-LAST:event_jbNuevoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

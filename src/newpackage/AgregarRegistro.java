@@ -1,6 +1,8 @@
 
 package newpackage;
 
+import javax.swing.JOptionPane;
+
 public class AgregarRegistro extends javax.swing.JInternalFrame {
 
     /**
@@ -121,8 +123,26 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jbSalirActionPerformed
 
     private void jbInscribirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbInscribirActionPerformed
-        // TODO add your handling code here:
-        
+
+    Alumno alumnoSeleccionado = (Alumno) jcbAlumno.getSelectedItem();
+    Materia materiaSeleccionada = (Materia) jcbMateria.getSelectedItem();
+
+    if (alumnoSeleccionado != null && materiaSeleccionada != null) {
+        boolean inscripto = alumnoSeleccionado.materias.add(materiaSeleccionada);
+
+        if (inscripto) {
+            JOptionPane.showMessageDialog(this, 
+                    "El alumno " + alumnoSeleccionado + " se inscribió en " + materiaSeleccionada + " correctamente.");
+        } else {
+            JOptionPane.showMessageDialog(this, 
+                    "El alumno " + alumnoSeleccionado + " ya está inscripto en " + materiaSeleccionada + ".", 
+                    "Aviso", JOptionPane.WARNING_MESSAGE);
+        }
+    } else {
+        JOptionPane.showMessageDialog(this, 
+                "Debe seleccionar un alumno y una materia.", 
+                "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jbInscribirActionPerformed
     
     private void cargarCombosB(){
