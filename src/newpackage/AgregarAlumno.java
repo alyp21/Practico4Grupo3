@@ -12,13 +12,13 @@ import javax.swing.JOptionPane;
  * @author Emiliano
  */
 public class AgregarAlumno extends javax.swing.JInternalFrame {
-    private HashSet <Alumno> alumnos;
+    public HashSet<Alumno> alumnos = new HashSet <>();
     
     /**
      * Creates new form AgregarAlumno
      * @param alumnos
      */
-    public AgregarAlumno(HashSet<Alumno>alumno) {
+    public AgregarAlumno(HashSet <Alumno> alumnos) {
         initComponents();
         this.alumnos = alumnos;
     }
@@ -37,14 +37,13 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
         jtfLegajo = new javax.swing.JTextField();
         jtfNombre = new javax.swing.JTextField();
         javax.swing.JButton jbGuardar = new javax.swing.JButton();
-        jbNuevo = new javax.swing.JButton();
+        javax.swing.JButton jbNuevo = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
         jlNombre = new javax.swing.JLabel();
         jlApellido = new javax.swing.JLabel();
         jlLegajo = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
         jbGuardar.setText("Guardar ");
         jbGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,7 +51,6 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
             }
         });
 
-        jbNuevo.setForeground(new java.awt.Color(0, 0, 0));
         jbNuevo.setText("Nuevo");
         jbNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +58,6 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
             }
         });
 
-        jbSalir.setForeground(new java.awt.Color(0, 0, 0));
         jbSalir.setText("Salir");
         jbSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +175,6 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton jbNuevo;
     private javax.swing.JButton jbSalir;
     private javax.swing.JLabel jlApellido;
     private javax.swing.JLabel jlLegajo;

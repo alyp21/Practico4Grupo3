@@ -12,14 +12,15 @@ import java.util.HashSet;
  */
 public class Menu extends javax.swing.JFrame {
 
-     private static HashSet<Alumno> alumno = new HashSet<>();
-     private static HashSet<Materia> materia = new HashSet<>();
+     private static final HashSet<Alumno> alumnos = new HashSet<>();
+     private static final HashSet<Materia> materias = new HashSet<>();
      
     /**
      * Creates new form Menu
      */
-    public Menu() {
+    public Menu(HashSet <Alumno> alumnos, HashSet <Materia> materias) {
         initComponents();
+        
     }
 
     /**
@@ -126,7 +127,7 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItemAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAlumnoActionPerformed
-         HashSet<Alumno> alumnos = null;
+        
         AgregarAlumno alumno = new AgregarAlumno(alumnos); 
         Escritorio.add(alumno);
         alumno.setVisible(true);
@@ -134,7 +135,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemAlumnoActionPerformed
 
     private void jMenuItemateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemateriaActionPerformed
-         HashSet<Materia> materias = null;
+       
        AgregarMateria materia = new AgregarMateria(materias); 
        Escritorio.add(materia);
        materia.setVisible(true);
@@ -150,7 +151,6 @@ public class Menu extends javax.swing.JFrame {
          AgregarRegistro registro = new AgregarRegistro(); 
     Escritorio.add(registro);
     registro.setVisible(true);
- 
     }//GEN-LAST:event_jRegistro1ActionPerformed
 
     /**
@@ -183,7 +183,8 @@ public class Menu extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                new Menu(alumnos, materias).setVisible(true);
+                
             }
         });
     }
