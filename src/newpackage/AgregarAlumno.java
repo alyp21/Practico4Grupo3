@@ -167,6 +167,9 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
 
     private void jbNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbNuevoActionPerformed
         // TODO add your handling code here:
+        jtfApellido.setText("");
+        jtfLegajo.setText("");
+        jtfNombre.setText("");
     }//GEN-LAST:event_jbNuevoActionPerformed
 
 

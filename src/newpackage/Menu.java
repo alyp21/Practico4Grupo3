@@ -149,9 +149,9 @@ public class Menu extends javax.swing.JFrame {
 
     private void jRegistro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRegistro1ActionPerformed
         // TODO add your handling code here:
-         AgregarRegistro registro = new AgregarRegistro(); 
-    Escritorio.add(registro);
-    registro.setVisible(true);
+        AgregarRegistro registro = new AgregarRegistro(); 
+        Escritorio.add(registro);
+        registro.setVisible(true);
     }//GEN-LAST:event_jRegistro1ActionPerformed
 
     /**
