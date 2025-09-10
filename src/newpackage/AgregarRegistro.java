@@ -132,10 +132,10 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
 
         if (inscripto) {
             JOptionPane.showMessageDialog(this, 
-                    "El alumno " + alumnoSeleccionado + " se inscribió en " + materiaSeleccionada + " correctamente.");
+                    "El alumno " + alumnoSeleccionado + " se inscribio en " + materiaSeleccionada + " correctamente.");
         } else {
             JOptionPane.showMessageDialog(this, 
-                    "El alumno " + alumnoSeleccionado + " ya está inscripto en " + materiaSeleccionada + ".", 
+                    "El alumno " + alumnoSeleccionado + " ya esta inscripto en " + materiaSeleccionada + ".", 
                     "Aviso", JOptionPane.WARNING_MESSAGE);
         }
     } else {

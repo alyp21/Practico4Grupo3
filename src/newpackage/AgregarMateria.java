@@ -165,7 +165,7 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
                 JOptionPane.showMessageDialog(this, "La materia ya existe");
             }
         }catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Debe ingresar un caracter numerico en codigo y año");
+            JOptionPane.showMessageDialog(this, "Debe ingresar un caracter numerico en codigo y anio");
         }
         
     }//GEN-LAST:event_jbGuardarActionPerformed
