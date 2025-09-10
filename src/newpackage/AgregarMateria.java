@@ -5,13 +5,13 @@
 package newpackage;
 
 import java.util.HashSet;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Emiliano
  */
 public class AgregarMateria extends javax.swing.JInternalFrame {
-    public HashSet<Materia> materias = new HashSet <>();
     
     /**
      * Creates new form AgregarMateria
@@ -19,7 +19,6 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
      */
     public AgregarMateria(HashSet<Materia> materias) {
         initComponents();
-        this.materias = materias;
     }
 
     /**
@@ -56,13 +55,15 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
         jlFormulario.setForeground(new java.awt.Color(0, 153, 204));
         jlFormulario.setText("Formulario de Materias");
 
-        jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
         jbGuardar.setText("Guardar ");
+        jbGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbGuardarActionPerformed(evt);
+            }
+        });
 
-        jbNuevo.setForeground(new java.awt.Color(0, 0, 0));
         jbNuevo.setText("Nuevo");
 
-        jbsalir.setForeground(new java.awt.Color(0, 0, 0));
         jbsalir.setText("Salir");
         jbsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,6 +144,26 @@ public class AgregarMateria extends javax.swing.JInternalFrame {
     private void jbsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbsalirActionPerformed
         dispose();
     }//GEN-LAST:event_jbsalirActionPerformed
+
+    private void jbGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGuardarActionPerformed
+        // TODO add your handling code here:
+        try{
+            int codigo = Integer.parseInt(jtfCodigo.getText());
+            String nombre= jtfNombre.getText();
+            int anio= Integer.parseInt(jtfAño.getText());
+            
+            Materia m= new Materia(codigo,nombre,anio);
+            
+            if(Menu.materias.add(m)){
+                JOptionPane.showMessageDialog(this, "Materia agregada correctamente");
+            }else{
+                JOptionPane.showMessageDialog(this, "La materia ya existe");
+            }
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Debe ingresar un caracter numerico en codigo y año");
+        }
+        
+    }//GEN-LAST:event_jbGuardarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

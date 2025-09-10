@@ -12,11 +12,13 @@ import java.util.HashSet;
  */
 public class Menu extends javax.swing.JFrame {
 
-     private static final HashSet<Alumno> alumnos = new HashSet<>();
-     private static final HashSet<Materia> materias = new HashSet<>();
+     public static final HashSet<Alumno> alumnos = new HashSet<>();
+     public static final HashSet<Materia> materias = new HashSet<>();
      
     /**
      * Creates new form Menu
+     * @param alumnos
+     * @param materias
      */
     public Menu(HashSet <Alumno> alumnos, HashSet <Materia> materias) {
         initComponents();

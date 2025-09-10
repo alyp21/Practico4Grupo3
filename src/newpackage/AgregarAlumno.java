@@ -12,7 +12,6 @@ import javax.swing.JOptionPane;
  * @author Emiliano
  */
 public class AgregarAlumno extends javax.swing.JInternalFrame {
-    public HashSet<Alumno> alumnos = new HashSet <>();
     
     /**
      * Creates new form AgregarAlumno
@@ -20,7 +19,6 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
      */
     public AgregarAlumno(HashSet <Alumno> alumnos) {
         initComponents();
-        this.alumnos = alumnos;
     }
 
     /**
@@ -159,7 +157,7 @@ public class AgregarAlumno extends javax.swing.JInternalFrame {
 
         Alumno a = new Alumno(legajo, nombre, apellido);
 
-        if (alumnos.add(a)) {
+        if (Menu.alumnos.add(a)) {
             JOptionPane.showMessageDialog(this, "Alumno agregado correctamente");
         } else {
             JOptionPane.showMessageDialog(this, "El alumno ya existe");

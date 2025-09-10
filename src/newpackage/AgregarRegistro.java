@@ -15,6 +15,7 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
      */
     public AgregarRegistro() {
         initComponents();
+        cargarCombosB();
     }
 
     /**
@@ -30,10 +31,10 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         jlMateria = new javax.swing.JLabel();
         jlAlumno = new javax.swing.JLabel();
-        javax.swing.JComboBox<Materia> jcbMateria = new javax.swing.JComboBox<>();
-        javax.swing.JComboBox<Alumno> jcbAlumno = new javax.swing.JComboBox<>();
         jbInscribir = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
+        jcbMateria = new javax.swing.JComboBox<>();
+        jcbAlumno = new javax.swing.JComboBox<>();
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 153, 204));
@@ -44,18 +45,6 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
 
         jlAlumno.setForeground(new java.awt.Color(0, 153, 204));
         jlAlumno.setText("ELIJA UN ALUMNO");
-
-        jcbMateria.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcbMateriaActionPerformed(evt);
-            }
-        });
-
-        jcbAlumno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcbAlumnoActionPerformed(evt);
-            }
-        });
 
         jbInscribir.setForeground(new java.awt.Color(0, 0, 0));
         jbInscribir.setText("Inscribir");
@@ -80,19 +69,21 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 135, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel1)
                             .addComponent(jbInscribir)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(61, 61, 61)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jlMateria)
-                            .addComponent(jlAlumno))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jcbMateria, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jcbAlumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jlAlumno)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jcbAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jlMateria)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jcbMateria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(48, 48, 48)
                 .addComponent(jbSalir)
                 .addGap(32, 32, 32))
@@ -131,16 +122,6 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jcbAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbAlumnoActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jcbAlumnoActionPerformed
-
-    private void jcbMateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbMateriaActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jcbMateriaActionPerformed
-
     private void jbSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalirActionPerformed
 
         dispose();
@@ -148,15 +129,25 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
 
     private void jbInscribirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbInscribirActionPerformed
         // TODO add your handling code here:
-
+        
     }//GEN-LAST:event_jbInscribirActionPerformed
 
+    private void cargarCombosB(){
+        for(Alumno a : Menu.alumnos){
+            jcbAlumno.addItem(a);
+        }
+        for (Materia m : Menu.materias){
+            jcbMateria.addItem(m);
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbInscribir;
     private javax.swing.JButton jbSalir;
+    private javax.swing.JComboBox<Alumno> jcbAlumno;
+    private javax.swing.JComboBox<Materia> jcbMateria;
     private javax.swing.JLabel jlAlumno;
     private javax.swing.JLabel jlMateria;
     // End of variables declaration//GEN-END:variables
