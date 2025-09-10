@@ -133,7 +133,6 @@ public class Menu extends javax.swing.JFrame {
         AgregarAlumno alumno = new AgregarAlumno(alumnos); 
         Escritorio.add(alumno);
         alumno.setVisible(true);
-
     }//GEN-LAST:event_jMenuItemAlumnoActionPerformed
 
     private void jMenuItemateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemateriaActionPerformed

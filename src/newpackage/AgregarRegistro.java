@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
- */
+
 package newpackage;
 
-/**
- *
- * @author Emiliano
- */
 public class AgregarRegistro extends javax.swing.JInternalFrame {
 
     /**
@@ -131,7 +124,7 @@ public class AgregarRegistro extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_jbInscribirActionPerformed
-
+    
     private void cargarCombosB(){
         for(Alumno a : Menu.alumnos){
             jcbAlumno.addItem(a);
